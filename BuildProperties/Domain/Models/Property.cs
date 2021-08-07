@@ -9,9 +9,9 @@ namespace Domain.Models
     [Table("Property")]
     public partial class Property
     {
-        [Column("Id_Owner", TypeName = "bigint")]
+        [Column("Id_Property", TypeName = "bigint")]
         [Key]
-        public long Id_Property { get; set; }
+        public long IdProperty { get; set; }
 
         [Column("Name", TypeName = "varchar(250)")]
         public string Name { get; set; }

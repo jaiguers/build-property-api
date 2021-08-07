@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -18,8 +18,10 @@
   <ItemGroup>
     <Folder Include="Business\BO\" />
     <Folder Include="Business\Interface\" />
-    <Folder Include="Business\Profiles\" />
-    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildProperties.CrossCutting\BuildProperties.CrossCutting.csproj" />
   </ItemGroup>
 
 </Project>
