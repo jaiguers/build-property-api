@@ -1,13 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
 namespace Domain.Models
 {
-    public partial class State
+    [Table("State")]
+    public class State
     {
-        public long Id_State { get; set; }
+        [Column("Id_State", TypeName = "bigint")]
+        [Key]
+        public long IdState { get; set; }
+
+        [Column("Description", TypeName = "varchar")]
         public string Description { get; set; }
     }
 }

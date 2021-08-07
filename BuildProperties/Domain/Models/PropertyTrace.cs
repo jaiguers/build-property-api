@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace Domain.Models
 {
     [Table("Property_Trace")]
-    public partial class PropertyTrace
+    public class PropertyTrace
     {
         [Column("Id_Property_Trace", TypeName = "bigint")]
         [Key]

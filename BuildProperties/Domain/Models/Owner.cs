@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Domain.Models
 {
     [Table("Owner")]
-    public partial class Owner
+    public class Owner
     {
         [Column("Id_Owner", TypeName = "bigint")]
         [Key]

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace Domain.Models
 {
     [Table("Property_Image")]
-    public partial class PropertyImage
+    public class PropertyImage
     {
         [Column("Id_Property_Image", TypeName = "bigint")]
         [Key]
