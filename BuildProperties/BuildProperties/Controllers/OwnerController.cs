@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BuildProperties.CrossCutting.ApiModel;
+﻿using BuildProperties.CrossCutting.ApiModel;
 using Domain.Business.BO;
 using Domain.Business.Interface;
 using Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 
 namespace BuildProperties.Controllers
 {
