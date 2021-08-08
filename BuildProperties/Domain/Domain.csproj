@@ -16,11 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Business\BO\" />
-    <Folder Include="Business\Interface\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BuildProperties.CrossCutting\BuildProperties.CrossCutting.csproj" />
   </ItemGroup>
 
