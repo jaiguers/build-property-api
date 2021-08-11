@@ -25,7 +25,7 @@ namespace Domain.Models
         [Column("Photo", TypeName = "varchar(150)")]
         public string Photo { get; set; }
 
-        [Column("Name", TypeName = "date")]
+        [Column("Birthday", TypeName = "date")]
         public DateTime? Birthday { get; set; }
     }
 }

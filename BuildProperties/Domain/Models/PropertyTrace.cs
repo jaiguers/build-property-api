@@ -20,10 +20,10 @@ namespace Domain.Models
         [Column("Name", TypeName = "varchar(200)")]
         public string Name { get; set; }
 
-        [Column("Name", TypeName = "decimal")]
+        [Column("Value", TypeName = "decimal")]
         public decimal Value { get; set; }
 
-        [Column("Name", TypeName = "decimal")]
+        [Column("Tax", TypeName = "decimal")]
         public decimal Tax { get; set; }
 
         [Column("Id_Property", TypeName = "bigint")]
