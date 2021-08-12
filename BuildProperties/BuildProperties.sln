@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildProperties", "BuildProperties\BuildProperties.csproj", "{7927254A-C292-4389-A732-D83674748DC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildProperties", "BuildProperties\BuildProperties.csproj", "{7927254A-C292-4389-A732-D83674748DC8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{7E19C68B-2484-4603-A0B2-73DEB7528592}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{FD2BBD69-1758-4A09-9C8F-4B39E6EB4B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{FD2BBD69-1758-4A09-9C8F-4B39E6EB4B94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{8B6A92FB-6AF8-482C-901B-595DD481F5E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildProperties.CrossCutting", "BuildProperties.CrossCutting\BuildProperties.CrossCutting.csproj", "{95B7C817-E79D-4F34-A3D0-C2129E63FCB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildProperties.CrossCutting", "BuildProperties.CrossCutting\BuildProperties.CrossCutting.csproj", "{95B7C817-E79D-4F34-A3D0-C2129E63FCB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{72E09781-81F8-4B22-9998-9138B67F8D9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{95B7C817-E79D-4F34-A3D0-C2129E63FCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95B7C817-E79D-4F34-A3D0-C2129E63FCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95B7C817-E79D-4F34-A3D0-C2129E63FCB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E09781-81F8-4B22-9998-9138B67F8D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E09781-81F8-4B22-9998-9138B67F8D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E09781-81F8-4B22-9998-9138B67F8D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E09781-81F8-4B22-9998-9138B67F8D9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FD2BBD69-1758-4A09-9C8F-4B39E6EB4B94} = {7E19C68B-2484-4603-A0B2-73DEB7528592}
 		{95B7C817-E79D-4F34-A3D0-C2129E63FCB5} = {8B6A92FB-6AF8-482C-901B-595DD481F5E4}
+		{72E09781-81F8-4B22-9998-9138B67F8D9B} = {7E19C68B-2484-4603-A0B2-73DEB7528592}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37432D97-24E0-4B5A-BD37-11D320A08CD0}
