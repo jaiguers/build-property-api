@@ -59,7 +59,7 @@ namespace Domain.Tests.Owners
         /// Fecha: 2020-08-11
         /// </summary>
         [Test]
-        public void SaveLongOnce()
+        public void SaveOwnerLongOnce()
         {
             // Arrange
             IOwer ownerBO = new OwnerBO(context);
@@ -78,7 +78,7 @@ namespace Domain.Tests.Owners
         /// Fecha: 2020-08-11
         /// </summary>
         [Test]
-        public void SaveExceptionNull()
+        public void SaveOwnerExceptionNull()
         {
             try
             {
@@ -102,7 +102,7 @@ namespace Domain.Tests.Owners
         /// Fecha: 2020-08-11
         /// </summary>
         [Test]
-        public void GetListOwnerCount()
+        public void GetOwnerListOwnerCount()
         {
             // Arrange
             IOwer ownerBO = new OwnerBO(context);
