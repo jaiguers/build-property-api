@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -36,5 +37,12 @@ namespace Domain.Models
 
         [ForeignKey("IdState")]
         public virtual State State { get; set; }
+
+        [ForeignKey("IdOwner")]
+        public virtual Owner Owner { get; set; }
+
+        public virtual ICollection<PropertyImage> PropertyImage { get; set; }
+
+        public virtual ICollection<PropertyTrace> PropertyTrace { get; set; }
     }
 }

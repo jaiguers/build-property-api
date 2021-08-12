@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace BuildProperties.CrossCutting.ApiModel
 {
@@ -24,5 +22,8 @@ namespace BuildProperties.CrossCutting.ApiModel
         public int Year { get; set; }
         public long IdOwner { get; set; }
         public long IdState { get; set; }
+
+        public List<PropertyImageAM> PropertyImage { get; set; }
+        public List<PropertyTraceAM> PropertyTrace { get; set; }
     }
 }

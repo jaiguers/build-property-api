@@ -16,5 +16,7 @@ namespace BuildProperties.CrossCutting.ApiModel
         public string Files { get; set; }
 
         public long IdState { get; set; }
+
+        public PropertyAM Property { get; set; }
     }
 }

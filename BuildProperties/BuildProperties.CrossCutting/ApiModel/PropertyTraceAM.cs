@@ -23,5 +23,7 @@ namespace BuildProperties.CrossCutting.ApiModel
 
         [Required(ErrorMessage = "Campo requerido.")]
         public long IdProperty { get; set; }
+
+        public PropertyAM Property { get; set; }
     }
 }
