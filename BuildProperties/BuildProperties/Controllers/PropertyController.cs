@@ -23,7 +23,7 @@ namespace BuildProperties.Controllers
         private readonly IPropertyImage propertyImgBO;
         private readonly ILogger<PropertyController> logger;
 
-        public PropertyController(RealEstateContext context, Logger<PropertyController> log)
+        public PropertyController(RealEstateContext context, ILogger<PropertyController> log)
         {
             logger = log;
             propertyBO = new PropertyBO(context);
@@ -57,7 +57,7 @@ namespace BuildProperties.Controllers
         }
 
         [HttpGet]
-        [Route("[action]")]
+        [Route("[action]/{id}")]
         public IActionResult GetProperty(long id)
         {
             try

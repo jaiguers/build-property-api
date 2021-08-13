@@ -23,6 +23,8 @@ namespace BuildProperties.CrossCutting.ApiModel
         public long IdOwner { get; set; }
         public long IdState { get; set; }
 
+        public OwnerAM Owner { get; set; }
+
         public List<PropertyImageAM> PropertyImage { get; set; }
         public List<PropertyTraceAM> PropertyTrace { get; set; }
     }

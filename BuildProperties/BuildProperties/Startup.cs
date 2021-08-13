@@ -18,6 +18,7 @@ namespace BuildProperties
 {
     public class Startup
     {
+        private readonly string thisCors = "thisCors";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,6 +29,15 @@ namespace BuildProperties
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(j =>
+            {
+                j.AddPolicy(name: thisCors,
+                           builder =>
+                           {
+                               builder.WithOrigins("*");
+                           });
+            });
+
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
             services.AddDbContext<RealEstateContext>(builder =>
              builder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), sqlOptions => sqlOptions.MigrationsAssembly(migrationsAssembly)));
@@ -47,7 +57,7 @@ namespace BuildProperties
 
             app.UseRouting();
 
-            app.UseCors();
+            app.UseCors(thisCors);
 
             app.UseAuthentication();
             app.UseAuthorization();

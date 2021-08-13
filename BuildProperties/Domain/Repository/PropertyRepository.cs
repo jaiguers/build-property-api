@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Domain.Repository.Base;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,7 +70,7 @@ namespace Domain.Repository
         {
             try
             {
-                return context.Properties.ToList();
+                return context.Properties.Include(j=>j.Owner).ToList();
             }
             catch (Exception ex)
             {
